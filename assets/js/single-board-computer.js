@@ -5,6 +5,16 @@ var SingleBoardComputer = {
 	quantity: 0,
 	hacksPerSec: 0.01,
 	cap: 2,
+	upgradeMessages: [
+		"Improved cluster network cables. ",
+		"Created cluster. x2 Single board computers",
+		"Better power cables. x2 Single board computers"
+	],
+	randomMsg: function() {
+		var m = this.upgradeMessages[Math.floor(Math.random() * (this.upgradeMessages.length - 0))];
+		console.log(m);
+		return m;
+	},
 	buy: function() {
 		this.quantity = this.quantity + 1;
 		Cash.remove(this.cost);
@@ -12,6 +22,7 @@ var SingleBoardComputer = {
 		this.cost = this.cost*1.1;
 
 		if (this.quantity == this.cap) {
+			Messages.addMsg(this.randomMsg());
 			this.hacksPerSec = this.hacksPerSec * 2;
 			this.cap = this.cap * 2;
 		}

@@ -3,3 +3,7 @@ File: assets/css/mater.css
 Author: Sam Erickson | samerickson.xyz
 Description: This file containes all the styles for the page
 */
+
+.header {
+	margin-top: 0.4em;
+}

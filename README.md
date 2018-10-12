@@ -10,7 +10,7 @@ more machines and use them for hacking.
 
 ### Current machines plan
 
-* **Slingle board computer** Gets you $0.10 every hack, a hack can be done once
+* **Single board computer** Gets you $0.10 every hack, a hack can be done once
   every ten seconds. You start with one chip, then the next costs $5 with a
   constant price increase of %110 for now.
 * **Old Laptop** Gets you $0.50 every hack, and a hack can be done every 30

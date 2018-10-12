@@ -24,6 +24,7 @@ function init() {
 	Cash.update();
 	Hack.update();
 	SingleBoardComputer.update();
+	Messages.update();
 }
 
 

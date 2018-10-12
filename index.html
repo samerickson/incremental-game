@@ -12,19 +12,18 @@ Author: Sam Erickson | samerickson.xyz
 	</head>
 	<body>
 		<div class="container">
-			<h1>Hacking game</h1>
+			<h1 class="header">Hacking game</h1>
 			<hr>
 			<div class="row">
 				<div class="col-md-12 border messages">
-					<h1>Messages: </h1>
-					<hr>
-					<code class="message">$ Time to start hacking...</code>
-					<p></p>
+					<h1 class="header">Messages: </h1>
+					<hr id="messages-top">
+					<p id="messages-bottom"></p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-3 resources border">
-					<h2>Resources</h2>
+					<h2 class="header">Resources</h2>
 					<hr>
 					<p><strong>Cash:</strong> $<span id="cash"></span></p>
 					<hr>
@@ -34,10 +33,10 @@ Author: Sam Erickson | samerickson.xyz
 					<p></p>
 				</div>
 				<div class="col-md-4 items purchase border">
-					<h2>Items</h2>
+					<h2 class="header">Items</h2>
 					<hr>
 					<div class="item single-board-computers">
-						<h5>Single board Computer</h5>
+						<h5 class="header">Single board Computer</h5>
 						<hr>
 						<p>
 							<strong>Quantity</strong>: <span id="sbc-quantity"></span>
@@ -50,7 +49,7 @@ Author: Sam Erickson | samerickson.xyz
 					</div>
 				</div>
 				<div class="col-md-5 upgrades border">
-					<h2>Upgrades</h2>
+					<h2 class="header">Upgrades</h2>
 					<hr>
 				</div>
 			</div>
@@ -59,6 +58,7 @@ Author: Sam Erickson | samerickson.xyz
 		<script src="assets/libs/bootstrap.min.js" charset="utf-8"></script>
 		<script src="assets/js/single-board-computer.js" charset="utf-8"></script>
 		<script src="assets/js/hack.js" charset="utf-8"></script>
+		<script src="assets/js/messages.js" charset="utf-8"></script>
 		<script src="assets/js/cash.js" charset="utf-8"></script>
 		<script src="assets/js/main.js" charset="utf-8"></script>
 	</body>

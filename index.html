@@ -7,12 +7,59 @@ Author: Sam Erickson | samerickson.xyz
 	<head>
 		<meta charset='utf-8'>
 		<title></title>
-		<link rel=stylesheet href=/css/master.css>
-		<link rel="stylesheet" href="libs/bootstrap.min.css">
+		<link rel=stylesheet href=assets/css/master.css>
+		<link rel="stylesheet" href="assets/libs/bootstrap.min.css">
 	</head>
 	<body>
-
-		<script src="libs/jquery-3.3.1.min.js" charset="utf-8"></script>
-		<style type='text/javascript' src='js/main.js'></style>
+		<div class="container">
+			<h1>Hacking game</h1>
+			<hr>
+			<div class="row">
+				<div class="col-md-12 border messages">
+					<h1>Messages: </h1>
+					<hr>
+					<code class="message">$ Time to start hacking...</code>
+					<p></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 resources border">
+					<h2>Resources</h2>
+					<hr>
+					<p><strong>Cash:</strong> $<span id="cash"></span></p>
+					<hr>
+					<p><strong>Hacks per/s</strong>: <span id="current-revenue"></span></p>
+					<p><strong>Revenue per hack</strong>: $<span id="current-hack-revenue"></span></p>
+					<button id="hack-button" class="btn btn-dark" onclick="buy(Hack)">Manual Hack</button>
+					<p></p>
+				</div>
+				<div class="col-md-4 items purchase border">
+					<h2>Items</h2>
+					<hr>
+					<div class="item single-board-computers">
+						<h5>Single board Computer</h5>
+						<hr>
+						<p>
+							<strong>Quantity</strong>: <span id="sbc-quantity"></span>
+							Next upgrade at <span id="sbc-cap"></span>
+						</p
+						<p><strong>Cost: </strong>$<span id="sbc-cost"></span></p>
+						<p><strong>Description</strong>: adds <span id='sbc-hacks-per-sec'></span> hacks per/s.</p>
+						<button class="buy btn btn-dark disabled" id="sbc-buy-button" onclick="buy(SingleBoardComputer)">Buy</button>
+						<p></p>
+					</div>
+				</div>
+				<div class="col-md-5 upgrades border">
+					<h2>Upgrades</h2>
+					<hr>
+				</div>
+			</div>
+		</div>
+		<script src="assets/libs/jquery-3.3.1.min.js" charset="utf-8"></script>
+		<script src="assets/libs/bootstrap.min.js" charset="utf-8"></script>
+		<script src="assets/js/single-board-computer.js" charset="utf-8"></script>
+		<script src="assets/js/hack.js" charset="utf-8"></script>
+		<script src="assets/js/cash.js" charset="utf-8"></script>
+		<script src="assets/js/main.js" charset="utf-8"></script>
 	</body>
 </html>

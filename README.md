@@ -1,5 +1,7 @@
 # incremental-game
 
+Hosted at: https://hacking-incremental.netlify.com/
+
 My take at creating an incremental game using bootstrap and jquery.
 
 # The Plan

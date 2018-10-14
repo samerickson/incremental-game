@@ -33,5 +33,20 @@ var SingleBoardComputer = {
         $('#sbc-hacks-per-sec').html(this.hacksPerSec);
         $('#sbc-quantity').html(this.quantity);
         $('#sbc-cost').html(this.cost.toFixed(2));
+    },
+    save: function() {
+        var sbc = {
+            cost: SingleBoardComputer.cost,
+            quantity: SingleBoardComputer.cost,
+            hacksPerSec: SingleBoardComputer.hacksPerSec,
+            cap: SingleBoardComputer.cap
+        }
+    },
+    // Loads the save data object into the current games object
+    loadSave: function(obj) {
+        this.cost = obj.cost;
+        this.quantity = obj.quantity;
+        this.hacksPerSec = obj.hacksPerSec;
+        this.cap = obj.cap;
     }
 };

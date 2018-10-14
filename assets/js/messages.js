@@ -1,7 +1,7 @@
 // File: assets/js/messages.js
 // Author: Sam Erickson | samerickson.xyz me@samerickson.xyz
-// Description: This file containes all the code for the messages functionality
-
+// Description: This file containes all the code for the messages functionality.
+//
 // Keeps track of the messages that are at the top of the screen
 //
 // addMsg(): Adds the message passed as a parameter to the messages array

@@ -1,4 +1,5 @@
 # incremental-game
+[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)
 
 Hosted at: https://hacking-incremental.netlify.com/
 
